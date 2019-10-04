@@ -1,0 +1,28 @@
+
+Command (m for help): 
+Expert command (m for help): Number of heads (1-256, default 255): 
+Expert command (m for help): Number of sectors (1-63, default 63): 
+Expert command (m for help): Number of cylinders (1-1048576): 
+Expert command (m for help): 
+Command (m for help): Command action
+   e   extended
+   p   primary partition (1-4)
+Partition number (1-4): First cylinder (1-500, default 1): Using default value 1
+Last cylinder, +cylinders or +size{K,M,G} (1-500, default 500): Using default value 500
+
+Command (m for help): Partition number (1-4): 
+Command (m for help): The partition table has been altered!
+
+Syncing disks.
+
+Disk /dev/loop1: 262 MB, 262144512 bytes
+16 heads, 63 sectors/track, 507 cylinders, total 512001 sectors
+Units = sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+Disk identifier: 0xbe46deb4
+
+      Device Boot      Start         End      Blocks   Id  System
+/dev/loop1p1   *          63      503999      251968+  83  Linux
+`src/kernel' -> `mount_point/boot/minimal_linux_like_kernel'
+[?1049h[1;24r(B[m[4l[?7h[?1h=[H[2J[2;5HGNU GRUB  version 0.97  (640K lower / 3072K upper memory)[4;8H[ Minimal BASH-like line editing is supported.   For[5;10Hthe   first   word,  TAB  lists  possible  command[6;10Hcompletions.  Anywhere else TAB lists the possible[7;10Hcompletions of a device/filename. ][9dgrub> device (hd0,0) hd.img[11dgrub> geometry (hd0) 500 16 63[12ddrive 0x80: C/H/S = 500/16/63, The number of sectors = 504000, hd.img[13;4HPartition num: 0,  Filesystem type is ext2fs, partition type 0x83[15dgrub> root (hd0,0)[16d Filesystem type is ext2fs, partition type 0x83[18dgrub> setup (hd0)[24d[2S[17d Checking if "/boot/grub/stage1" exists... yes[18d Checking if "/boot/grub/stage2" exists... yes[19d Checking if "/boot/grub/e2fs_stage1_5" exists... no[20d Running "install /boot/grub/stage1 (hd0) /boot/grub/stage2 p /boot/grub/menu.l[21dst "... succeeded[22dDone.[24dgrub> quit[24;1H[?1049l[?1l>[24;1H[?1049l[?1l>

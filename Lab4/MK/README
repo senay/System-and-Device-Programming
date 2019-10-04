@@ -1,0 +1,22 @@
+Go to the selected directory (for example "genesis")
+
+./build.sh
+
+sudo ../pack.sh 256
+qemu -hda hd.img -serial mon:stdio
+
+
+../qemu hd.img  
+
+b *0x7c00
+b *0x7c70
+
+Open another terminal and run ddd &
+
+NOTE:
+Edit the File browser preferences 
+  - on TAB  Media deselect Browse media when inserted
+
+be sure that a copy of files .gdbinit and  build.sh is in the directory 
+(or a symbolic link to the file located in MK)
+

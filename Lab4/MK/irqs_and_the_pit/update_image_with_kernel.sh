@@ -1,0 +1,1 @@
+../update_image_with_kernel.sh

@@ -1,0 +1,5 @@
+nasm -felf boot.s
+cc -nostdlib -nostdinc -fno-builtin -g   -c -o main.o main.c
+cc -nostdlib -nostdinc -fno-builtin -g   -c -o monitor.o monitor.c
+cc -nostdlib -nostdinc -fno-builtin -g   -c -o common.o common.c
+ld -Tlink.ld -o kernel boot.o main.o monitor.o common.o

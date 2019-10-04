@@ -1,0 +1,2 @@
+main.c:6: warning: ‘struct multiboot’ declared inside parameter list
+main.c:6: warning: its scope is only this definition or declaration, which is probably not what you want

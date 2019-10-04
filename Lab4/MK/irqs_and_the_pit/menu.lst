@@ -1,0 +1,5 @@
+title  minimal linux like kernel
+kernel /boot/minimal_linux_like_kernel root=/dev/hda ro quiet splash
+# initrd /boot/minimal_linux_like_kernel_initrd
+quiet
+
